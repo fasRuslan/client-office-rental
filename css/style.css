@@ -1,0 +1,486 @@
+body {
+	color: white;
+}
+
+/* header */
+.header {
+	padding: 2% 2% 2% 2%;
+	background-image: url(../img/);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.header_menu {}
+
+.menu__list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu__social {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu__social-img {
+	margin-left: 10px;
+}
+
+.menu__item a {
+	color: #727272;
+	text-transform: uppercase;
+	transition: all 1s ease;
+}
+
+.menu__item a:hover {
+	color: #2491e1;
+}
+
+.menu__item a.tel {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+
+/* general */
+.general {
+	padding: 7% 2% 2% 2%;
+	background-image: url(../img/first-fone.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.general__title {
+	font-weight: 500;
+	color: #2491e1;
+	margin-bottom: 5%;
+}
+
+.general__subtitle {
+	font-size: 48px;
+	text-transform: uppercase;
+	margin-bottom: 3%;
+}
+
+.general__list {}
+
+.general__item {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 0.5%;
+	font-size: 24px;
+}
+
+.general__item img {
+	margin-right: 1%;
+}
+
+.general__btn {
+	margin-top: 1%;
+	background-color: #2491e1;
+	padding: 10px 15px;
+	font-size: 20px;
+	color: white;
+	margin-left: auto;
+	margin-bottom: 15%;
+	width: 15%;
+	text-align: center;
+}
+
+.general__logo {}
+
+.logo {
+	max-width: 100%;
+}
+
+.general__logo-text {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+form .first-logo-line {
+	width: 10%;
+	height: 3px;
+	background-color: #2491e1;
+}
+
+.logo-title {
+	color: black;
+	font-size: 36px;
+	position: relative;
+}
+
+/* Popup */
+.popup {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.7);
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	/* Если много текста */
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.popup.open {
+	opacity: 1;
+	visibility: visible;
+
+}
+
+.popup.open .popup__content {
+	opacity: 1;
+	visibility: visible;
+	transform: translate(0px, 0%);
+}
+
+.popup__body {
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 10px;
+	transition: all 0.8s ease 0s;
+}
+
+.popup__content {
+	position: relative;
+	padding: 2% 2% 2% 2%;
+	background-color: white;
+	transition: all 0.8s ease 0s;
+	transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+/* closing cross */
+.popup__close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+
+}
+
+.popup .open {
+	opacity: 1;
+	visibility: visible;
+}
+
+.form {
+	padding: 3% 2% 3% 2%;
+	text-align: center;
+	background-color: white;
+}
+
+.form-title {
+	color: black;
+	font-size: 25px;
+	margin-bottom: 5%;
+}
+
+#select-type {
+	text-align-last: center;
+	margin-bottom: 5%;
+	border: 1px solid black;
+	width: 100%;
+}
+
+.form-subtitle {
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 4%;
+}
+
+input[type=text] {
+	padding: 10px;
+	border: 1px solid black;
+	font-size: 16px;
+
+}
+
+.comments {
+	width: 100%;
+	height: 20%;
+}
+
+
+.popup__link {
+	background-color: #2491E1;
+	padding: 10px 15px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.second-logo-line {
+	width: 70%;
+	height: 3px;
+	background-color: #2491e1;
+}
+
+/* about_us */
+.aboutus {
+	padding: 5% 2% 2% 2%;
+	color: black;
+}
+
+.aboutus-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.aboutus__title {
+	font-weight: bold;
+	text-align: center;
+	width: 20%;
+}
+
+.aboutus__description {
+	width: 30%;
+	margin-bottom: 6%;
+}
+
+.aboutus__img {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.aboutus__first-img {
+	max-width: 60%;
+}
+
+.aboutus__second-img {
+	max-width: 48%;
+}
+
+/* price */
+.price {
+	padding: 6% 2% 2% 2%;
+	background-image: url(../img/Фон\ спец\ цен.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.price__title {
+	color: black;
+	margin-bottom: 2%;
+}
+
+.price__subtitle {
+	color: #3d3d3d;
+	font-size: 18px;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 2%;
+}
+
+/* slider */
+.slider {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.slick-arrow {
+	background-color: black;
+}
+
+.slider__item {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	transition: all 1s ease;
+}
+
+.slider-img {
+	transition: all 1s ease;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.slider-img {
+	z-index: 2;
+}
+
+.slide__description {
+	position: absolute;
+	top: 80%;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	background-color: rgba(57, 63, 78, 0.5);
+	transition: all 1s ease;
+}
+
+.slider-title {
+	text-align: center;
+	font-size: 26px;
+	margin-bottom: 3%;
+	color: rgba(179, 179, 181, 0.5);
+	transition: all 1s ease;
+}
+
+.slider-description {
+	text-align: center;
+	font-size: 22px;
+	color: rgba(179, 179, 181, 0.5);
+	transition: all 1s ease;
+}
+
+/* table-price */
+.table-price {
+	padding: 6% 2% 2% 2%;
+}
+
+.general__logo-text {
+	margin-bottom: 2%;
+}
+
+.flex__table-price {
+	display: flex;
+	justify-content: space-around;
+}
+
+.table__price-img {
+	width: 40%;
+}
+
+.table-price__table {
+	width: 60%;
+	border-spacing: 0;
+}
+
+.table-price__table td {
+	padding: 20px 10px;
+	text-align: center;
+}
+
+.star {
+	margin: left;
+	color: black;
+}
+
+/* Кабинеты */
+.cabinets {
+	padding: 6% 2% 2% 2%;
+}
+
+.cabinets__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	color: black;
+}
+
+.cabinets__item {
+	width: 50%;
+}
+
+.cabinets__img {
+	width: 50%;
+}
+
+.cabinets__img img {
+	width: 100%;
+}
+
+/* Правила */
+.regulation {
+	padding: 6% 2% 2% 2%;
+}
+
+.regulation__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: black;
+}
+
+.regulation__item:first-child {
+	width: 40%;
+}
+
+.regulation__item:last-child {
+	width: 50%;
+}
+
+.regulation__item img {
+	width: 100%;
+}
+
+.regulation__text-list {}
+
+.regulation__text-item {
+	margin-bottom: 3%;
+}
+
+.regulation__number {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.regulation__text-item {
+	font-size: 20px;
+}
+
+/* footer */
+.footer {
+	padding: 6% 0% 2% 0%;
+	background-image: url(../img/Фон\ спец\ цен.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.adress {
+	width: 30%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: black;
+	background-color: #fff;
+	font-size: 18px;
+	text-align: center;
+}
+
+.social-list {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.social-item {
+	margin-left: 3px;
+}
+
+.map {
+	width: 100%;
+	margin-bottom: 2%;
+}
+
+.footer__copiryght {
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+}
