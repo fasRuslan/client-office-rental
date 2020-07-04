@@ -1,7 +1,5 @@
 const popupLinks = document.querySelectorAll('.popup__link'); //Присваем тем объектам которые должны открывать popup
-console.log(popupLinks)
 const body = document.querySelectorAll('body'); //Забираем боди для работы над скролом при октрытии popup
-
 let unlock = true; //Будет использоваться для избежания двойных нажатий
 
 const timeout = 800;
@@ -39,13 +37,14 @@ function popupOpen(curentPopup) {
 	curentPopup.classList.add('open');
 	curentPopup.addEventListener('click', function (e) {
 		if (!e.target.closest('.popup__content')) {
-			console.log(e.target.closest('.popup'));
 			popupClose(e.target.closest('.popup'));
 		}
 	});
 }
 
-
 // popupClose
+function popupClose(activePopup) {
+	activePopup.classList.remove('open');
+};
 
 // function

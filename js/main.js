@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	$('.slider').slick({
 		centerMode: true,
 		centerPadding: '60px',
-		slidesToShow: 4,
+		slidesToShow: 3,
 		responsive: [{
 				breakpoint: 768,
 				settings: {
@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 			this.children[0].style.width = '110%';
 
-			this.children[0].style.zIndex = '2';
+			this.children[0].style.opacity = '1';
 
 			let div = this.children[1];
 
@@ -59,6 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	function returnColorDescription() {
 
 		this.children[0].style.width = '100%';
+		this.children[0].style.opacity = '0.6';
 
 		let div = this.children[1];
 
